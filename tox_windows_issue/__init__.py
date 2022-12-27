@@ -15,9 +15,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+"""
+Reproducer for tox issue #2778: https://github.com/tox-dev/tox/issues/2778
+"""
+
 
 def my_function() -> int:
     return 42
 
+
+__version__ = "0.1.0"
 
 __all__ = ["my_function"]
