@@ -1,3 +1,3 @@
 # tox-windows-issue
 
-Reproducer for [tox issue #2778](https://github.com/tox-dev/tox/issues/2778).
+Minimal reproducer for [tox issue #2778](https://github.com/tox-dev/tox/issues/2778).

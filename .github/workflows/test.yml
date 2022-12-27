@@ -9,7 +9,7 @@ on:
 
 jobs:
     test:
-        name: "tox issue reproducer"
+        name: "Reproduce tox windows-latest issue"
         runs-on: windows-latest
 
         steps:

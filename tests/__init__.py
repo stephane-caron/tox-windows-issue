@@ -1,1 +1,1 @@
-# Make sure Python treats the test directory as a package.
+# Make sure coverage discovers this test directory.
