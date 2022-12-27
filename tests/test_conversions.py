@@ -17,9 +17,9 @@
 
 import unittest
 
-from project import my_function
+from tox_windows_issue import my_function
 
 
-class TestProject(unittest.TestCase):
+class TestFunction(unittest.TestCase):
     def test_my_function(self):
         self.assertEqual(my_function(), 42)
