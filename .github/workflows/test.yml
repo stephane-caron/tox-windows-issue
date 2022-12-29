@@ -9,8 +9,12 @@ on:
 
 jobs:
     test:
-        name: "Reproduce tox windows-latest issue"
-        runs-on: windows-latest
+        name: "Reproduce tox ${{ matrix.os }} issue"
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            matrix:
+                os: [ubuntu-latest, macos-latest, windows-latest]
 
         steps:
             - name: "Checkout sources"
