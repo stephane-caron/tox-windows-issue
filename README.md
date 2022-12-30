@@ -7,4 +7,12 @@ Minimal reproducer for [tox issue #2778](https://github.com/tox-dev/tox/issues/2
 
 ## Follow-up
 
-The issue seems related to a new behavior since tox >= 4.0 where tox started escaping quotes in commands [#2635](https://github.com/tox-dev/tox/issues/2635).
+The issue seems related to a new behavior since tox >= 4.0 where tox started escaping quotes in commands [#2635](https://github.com/tox-dev/tox/issues/2635). There are at least two ways to work around this change if you are experiencing the same issue as in this reproducer:
+
+- Remove all quotes from your commands, *e.g.* escaping spaces and wildcards with backslashes ([example](https://github.com/tox-dev/tox/issues/2635#issuecomment-1367273844)).
+- Use previous versions of tox, for instance by adding the following to your ``tox.ini``:
+
+```
+[tox]
+requires = tox<4
+```
