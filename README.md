@@ -1,5 +1,9 @@
 # tox-windows-issue
 
+**Update:** issue [tox#2635](https://github.com/tox-dev/tox/issues/2635) was fixed in tox 4.4.0. Archiving this repository after confirming that it solved the underlying issue [tox#2778](https://github.com/tox-dev/tox/issues/2778) as well.
+
+## Issue description
+
 Minimal reproducer for [tox issue #2778](https://github.com/tox-dev/tox/issues/2778):
 
 - Jobs succeed with ``tox==3.28.0``: checked with [this commit](https://github.com/stephane-caron/tox-windows-issue/commit/5a73bd326fc9b1ac25b9d863477e54c7f3e21dce) by [this job](https://github.com/stephane-caron/tox-windows-issue/actions/runs/3786963834/jobs/6438334658).
@@ -16,5 +20,3 @@ The issue seems related to a new behavior since tox >= 4.0 where tox started esc
 [tox]
 requires = tox<4
 ```
-
-Edit: issue #2635 has been closed as of 2023-02-15.
