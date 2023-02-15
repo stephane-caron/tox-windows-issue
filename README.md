@@ -16,3 +16,5 @@ The issue seems related to a new behavior since tox >= 4.0 where tox started esc
 [tox]
 requires = tox<4
 ```
+
+Edit: issue #2635 has been closed as of 2023-02-15.
